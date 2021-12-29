@@ -9,7 +9,9 @@ export class GamesService {
   constructor(@InjectRepository(Game) private gamesRepo: Repository<Game>) {}
 
   async getAllGames() {
-    return await this.gamesRepo.find();
+    return await this.gamesRepo.find({
+      relations: ['publisher'],
+    });
   }
 
   async getOneGame(id: string) {
