@@ -32,6 +32,6 @@ http://localhost:3000/
 /games/:id - PUT - update a game
 
 
-/games/:id/publisher - GET - get publisher by game's id
+/games/:id/publishers - GET - get publisher by game's id
 
 /games/discount - POST - get all games considering release date
